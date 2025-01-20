@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px; /* 열 간격 */
+    width: 30%;
+    margin: 0 auto;
+}
+
+.category {
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    width: 50%; /* 너비를 80%로 설정 */
+    margin: 0 auto; /* 중앙 정렬을 위한 마진 추가 */
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bolder; /* 더 두껍게 변경 */
+    margin-bottom: 10px;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 -7px;
+}
+
+.color {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.color-code {
+    margin-top: 5px;
+    font-size: 8px; /* 픽셀 단위로 조정 */
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
